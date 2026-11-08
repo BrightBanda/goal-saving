@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analytics - Goal Saving</title>
+  <link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+
+  <!-- Site header: replace with the existing system's shared header include -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/">
+        <span class="brand__mark" aria-hidden="true">G</span>
+        <span class="brand__name">GOAL SAVING</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transactions.html">Transaction history</a>
+        <a href="analytics.html" aria-current="page">Analytics</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+      <span class="user-chip">Demo User</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="page__title">Analytics</h1>
+    <p class="page__intro">See how close you are to reaching each goal.</p>
+
+    <section class="panel" aria-labelledby="goals-heading">
+      <h2 id="goals-heading" class="visually-hidden">Goal progress overview</h2>
+
+      <!-- Summary figures -->
+      <dl class="summary">
+        <div class="stat">
+          <dt class="stat__label">Saved across goals</dt>
+          <dd class="stat__value"><span>MWK</span> 6,000</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Total targets</dt>
+          <dd class="stat__value"><span>MWK</span> 400,000</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Overall progress</dt>
+          <dd class="stat__value">41%</dd>
+        </div>
+      </dl>
+
+      <!-- One <li> per goal. Set --value to the percentage and keep aria-valuenow in sync. -->
+      <ul class="goals">
+        <li class="goal">
+          <h3 class="goal__name">School fees</h3>
+          <div class="goal__meta">
+            <span>42%</span>
+            <span>MWK 630,000 / MWK 1,500,000</span>
+          </div>
+          <div class="bar" role="progressbar" aria-label="School fees progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="42" style="--value:42%"></div>
+          <p class="goal__note">Remaining: MWK 870,000</p>
+        </li>
+
+        <li class="goal">
+          <h3 class="goal__name">Start a business</h3>
+          <div class="goal__meta">
+            <span>25%</span>
+            <span>MWK 500,000 / MWK 2,000,000</span>
+          </div>
+          <div class="bar" role="progressbar" aria-label="Start a business progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" style="--value:25%"></div>
+          <p class="goal__note">Remaining: MWK 1,500,000</p>
+        </li>
+
+        <li class="goal">
+          <h3 class="goal__name">Medical emergency fund</h3>
+          <div class="goal__meta">
+            <span>100%</span>
+            <span>MWK 500,000 / MWK 500,000</span>
+          </div>
+          <div class="bar" role="progressbar" aria-label="Medical emergency fund progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="--value:100%"></div>
+          <p class="goal__note">Goal reached &mdash; unlocked</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
