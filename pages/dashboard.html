@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard &bull; GOAL SAVING</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+
+<body>
+    <nav class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <div class="mark">G</div>
+                <span>GOAL SAVING</span>
+            </div>
+            <input type="checkbox" id="nav-check" hidden>
+            <label class="menu-toggle" for="nav-check" aria-label="Toggle navigation">&#9776;</label>
+            <div class="nav-links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="transactions.html">Transaction history</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="settings.html">Settings</a>
+            </div>
+            <div class="user-chip">Demo User</div>
+        </div>
+    </nav>
+
+    <main class="wrap">
+        <header class="page-header">
+            <h1>Dashboard</h1>
+            <p>Keep your goals in sight. Funds stay locked until your target is reached.</p>
+        </header>
+
+        <div class="card-grid">
+            <div class="stat green">
+                <div class="value">MWK 420,000</div>
+                <div class="label">Total saved</div>
+            </div>
+            <div class="stat green">
+                <div class="value">3</div>
+                <div class="label">Active goals</div>
+            </div>
+            <div class="stat green">
+                <div class="value">42%</div>
+                <div class="label">Average progress</div>
+            </div>
+            <div class="stat green">
+                <div class="value">2</div>
+                <div class="label">Completed</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <h2 style="font-size:1.1rem;color:var(--green-dark);">Your goals</h2>
+                <button class="btn small">Create goal</button>
+            </div>
+
+            <article class="goal-card">
+                <div class="goal-info">
+                    <h3>School fees</h3>
+                    <div class="meta">Target: MWK 1,500,000 &bull; Jan 2027</div>
+                    <div class="progress-wrap">
+                        <div class="progress-label"><span>Saved</span><span>MWK 630,000 / MWK 1,500,000</span></div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:42%"></div>
+                        </div>
+                    </div>
+                    <span class="badge active">Active &bull; Locked</span>
+                </div>
+                <div class="goal-actions">
+                    <button class="btn small secondary">Deposit</button>
+                </div>
+            </article>
+
+            <article class="goal-card">
+                <div class="goal-info">
+                    <h3>Start a business</h3>
+                    <div class="meta">Target: MWK 2,000,000 &bull; Jun 2027</div>
+                    <div class="progress-wrap">
+                        <div class="progress-label"><span>Saved</span><span>MWK 500,000 / MWK 2,000,000</span></div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:25%"></div>
+                        </div>
+                    </div>
+                    <span class="badge active">Active &bull; Locked</span>
+                </div>
+                <div class="goal-actions">
+                    <button class="btn small secondary">Deposit</button>
+                </div>
+            </article>
+
+            <article class="goal-card">
+                <div class="goal-info">
+                    <h3>Medical emergency fund</h3>
+                    <div class="meta">Target: MWK 500,000 &bull; No fixed date</div>
+                    <div class="progress-wrap">
+                        <div class="progress-label"><span>Saved</span><span>MWK 500,000 / MWK 500,000</span></div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:100%"></div>
+                        </div>
+                    </div>
+                    <span class="badge done">Completed</span>
+                </div>
+                <div class="goal-actions">
+                    <button class="btn small secondary">Withdraw</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="title">GOAL SAVING</span>
+            Collins CJ Chirwa (CEN 01/03/24), Luckson Lwinga (CEN 01/06/24), Pynas Loveness Manda (ICT 01/06/24),
+            Clement Mbewe (ICT 01/59/24), Bright Banda (CEN 01/59/24)
+        </div>
+    </footer>
+</body>
+
+</html>
