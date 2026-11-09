@@ -1,0 +1,153 @@
+/* Goal Saving — Signup Page Styles */
+
+:root {
+    --green: #1c8047;
+    --green-dark: #155d35;
+    --green-soft: #effaf3;
+    --ink: #202a35;
+    --muted: #737b86;
+    --page: #f3f4f6;
+    --border: #e3e6e9;
+    --white: #ffffff;
+    --shadow: 0 2px 5px rgba(24, 39, 52, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--page);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Signup Page Layout */
+
+.page-main {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 40px 24px 60px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 448px;
+
+    margin: 0 auto;
+    padding: 32px 28px;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+
+.card-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.card-heading h1 {
+    margin: 0 0 8px;
+    color: var(--green-dark);
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+.card-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+/* Form Fields */
+
+.form-field {
+    margin-bottom: 19px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    min-height: 53px;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.form-field input::placeholder {
+    color: #858b92;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(28, 128, 71, 0.12);
+}
+
+/* Create Account Button */
+
+.primary-button {
+    width: 100%;
+    min-height: 51px;
+    margin-top: 1px;
+    border: 0;
+    border-radius: 13px;
+    background: var(--green);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: var(--green-dark);
+}
+
+/* Login Link */
+
+.card-bottom {
+    margin: 21px 0 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+.card-bottom a {
+    color: var(--green-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card-bottom a:hover {
+    color: var(--green-dark);
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goal Saving | Sign up</title>
+  <link rel="stylesheet" href="../styles/navbarAndFooterStyle.css">
+  <link rel="stylesheet" href="../styles/signup.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="signup.html" aria-label="Goal Saving home">
+        <span class="brand-mark">G</span><span class="brand-name">GOAL SAVING</span>
+      </a>
+      <nav class="auth-nav" aria-label="Account navigation">
+        <a class="nav-link" href="login.html">Log in</a>
+        <a class="nav-button" href="signup.html" aria-current="page">Sign up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="auth-card" aria-labelledby="signup-title">
+      <div class="card-heading">
+        <h1 id="signup-title">Create your account</h1>
+        <p>Start locking money toward your financial goals.</p>
+      </div>
+
+      <form action="#" method="post">
+        <div class="form-field">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="full_name" type="text" placeholder="e.g. Bright Banda" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Choose a username" autocomplete="username" required>
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" required>
+        </div>
+        <div class="form-field">
+          <label for="confirm-password">Confirm password</label>
+          <input id="confirm-password" name="confirm_password" type="password" placeholder="Repeat your password" autocomplete="new-password" required>
+        </div>
+        <button class="primary-button" type="submit">Create account</button>
+      </form>
+
+      <p class="card-bottom">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="signup.html">GOAL SAVING</a>
+      <p class="footer-tagline">Small steps today. Stronger financial goals tomorrow.</p>
+      <div class="footer-divider"></div>
+      <p class="team-credit">A classroom project by Collins CJ Chirwa, Luckson Lwinga, Pynas Loveness Manda, Clement Mbewe, and Bright Banda.</p>
+    </div>
+  </footer>
+</body>
+</html>
