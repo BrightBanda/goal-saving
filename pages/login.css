@@ -1,0 +1,210 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18%;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo,
+.card-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #174f30;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    background-color: #21834b;
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+
+.navbar nav .nav-login {
+    background-color: #21834b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+/* Main Container */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+/* Login Card */
+.login-card {
+    background-color: white;
+    width: 395px;
+    padding: 32px;
+    border-radius: 13px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.card-logo {
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.login-card h2 {
+    color: #174f30;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 27px;
+}
+
+/* Form Styling */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e8efff;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border: 1px solid #21834b;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #21834b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #176b3a;
+}
+
+/* Sign Up Text */
+.signup-text {
+    margin-top: 22px;
+    color: #777;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #21834b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #ddd;
+}
+
+footer h4 {
+    color: #174f30;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 15px;
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 395px;
+        padding: 25px 20px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
