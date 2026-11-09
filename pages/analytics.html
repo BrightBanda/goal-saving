@@ -6,24 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Analytics - Goal Saving</title>
   <link rel="stylesheet" href="../styles/analytics.css">
+  <link rel="stylesheet" href="../utils/navbar.css">
 </head>
 
 <body>
 
-  <!-- Site header: replace with the existing system's shared header include -->
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="dashboard.html">
-        <span class="brand__mark" aria-hidden="true">G</span>
-        <span class="brand__name">GOAL SAVING</span>
+  <header class="app-navbar" data-mode="app">
+    <div class="navbar-inner">
+      <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+        <span class="navbar-brand-mark" aria-hidden="true">G</span>
+        <span>GOAL SAVING</span>
       </a>
-      <nav class="main-nav" aria-label="Main">
+      <nav class="navbar-nav" aria-label="Main navigation">
         <a href="dashboard.html">Dashboard</a>
         <a href="transaction-records.html">Transaction history</a>
-        <a href="analytics.html" aria-current="page">Analytics</a>
+        <a href="analytics.html" class="is-active" aria-current="page">Analytics</a>
         <a href="settings.html">Settings</a>
       </nav>
-      <span class="user-chip">Demo User</span>
+      <span class="navbar-user">Demo User</span>
     </div>
   </header>
 

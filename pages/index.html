@@ -4,12 +4,89 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Goal Saving</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <meta name="description" content="Save with purpose by locking money toward the goals that matter to you.">
+    <title>Goal Saving | Save with purpose</title>
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link rel="stylesheet" href="../utils/navbar.css">
 </head>
 
 <body>
-    <h1>Goal Savings</h1>
+    <header class="app-navbar" data-mode="public">
+        <div class="navbar-inner">
+            <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+                <span class="navbar-brand-mark" aria-hidden="true">G</span>
+                <span>GOAL SAVING</span>
+            </a>
+            <nav class="navbar-nav" aria-label="Account navigation">
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Make room for what matters</p>
+                <h1>Give your goals a little more <em>commitment.</em></h1>
+                <p class="hero-description">Set a target, save toward it, and keep your money out of reach until your
+                    goal is ready.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="signup.html">Start saving <span aria-hidden="true">&rarr;</span></a>
+                    <a class="button secondary" href="login.html">Log in to your account</a>
+                </div>
+                <p class="hero-note">A clearer path from intention to achievement.</p>
+            </div>
+
+            <aside class="goal-preview" aria-label="Example savings goal">
+                <div class="preview-topline">
+                    <span class="preview-label">YOUR SAVINGS PLAN</span>
+                    <span class="lock-indicator"><span aria-hidden="true">&#9679;</span> LOCKED</span>
+                </div>
+                <h2>School fees</h2>
+                <p class="preview-date">Target date <strong>January 2027</strong></p>
+                <div class="amount-row">
+                    <span>MWK 630,000</span>
+                    <span>of 1,500,000</span>
+                </div>
+                <div class="progress-track" role="img" aria-label="42 percent saved toward the school fees goal">
+                    <span></span>
+                </div>
+                <div class="progress-caption"><strong>42%</strong><span>MWK 870,000 to go</span></div>
+                <div class="preview-rule"><span aria-hidden="true">&#10003;</span> Your savings stay set aside for this
+                    goal.</div>
+            </aside>
+        </section>
+
+        <section class="how-it-works" aria-label="How goal saving works">
+            <div class="section-heading">
+                <p class="eyebrow">A simple way to stay on track</p>
+                <h2>Small deposits. A goal within reach.</h2>
+            </div>
+            <div class="steps">
+                <article class="step">
+                    <span class="step-number">01</span>
+                    <h3>Name your goal</h3>
+                    <p>Choose what you are saving for and set a target amount.</p>
+                </article>
+                <article class="step">
+                    <span class="step-number">02</span>
+                    <h3>Add to it steadily</h3>
+                    <p>Make deposits and follow your progress as it grows.</p>
+                </article>
+                <article class="step">
+                    <span class="step-number">03</span>
+                    <h3>Reach it on your terms</h3>
+                    <p>Your funds unlock when your goal conditions are met.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand">GOAL SAVING</span>
+        <span>Save with purpose. Reach what matters.</span>
+    </footer>
 </body>
 
 </html>

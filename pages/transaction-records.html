@@ -6,20 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goal Saving - Transaction History</title>
   <link rel="stylesheet" href="../styles/transaction-records.css">
+  <link rel="stylesheet" href="../utils/navbar.css">
 
 </head>
 
 <body>
 
-  <header>
-    <div class="logo"><span>G</span> GOAL SAVING</div>
-    <nav>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="transaction-records.html" class="active" aria-current="page">Transaction history</a>
-      <a href="analytics.html">Analytics</a>
-      <a href="settings.html">Settings</a>
-    </nav>
-    <div class="user">Demo User</div>
+  <header class="app-navbar" data-mode="app">
+    <div class="navbar-inner">
+      <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+        <span class="navbar-brand-mark" aria-hidden="true">G</span>
+        <span>GOAL SAVING</span>
+      </a>
+      <nav class="navbar-nav" aria-label="Main navigation">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transaction-records.html" class="is-active" aria-current="page">Transaction history</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+      <span class="navbar-user">Demo User</span>
+    </div>
   </header>
 
   <main>

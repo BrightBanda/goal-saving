@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard &bull; GOAL SAVING</title>
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../utils/navbar.css">
 </head>
 
 <body>
-    <nav class="topbar">
-        <div class="topbar-inner">
-            <div class="brand">
-                <div class="mark">G</div>
+    <header class="app-navbar" data-mode="app">
+        <div class="navbar-inner">
+            <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+                <span class="navbar-brand-mark" aria-hidden="true">G</span>
                 <span>GOAL SAVING</span>
-            </div>
-            <input type="checkbox" id="nav-check" hidden>
-            <label class="menu-toggle" for="nav-check" aria-label="Toggle navigation">&#9776;</label>
-            <div class="nav-links">
-                <a href="dashboard.html" class="active">Dashboard</a>
+            </a>
+            <nav class="navbar-nav" aria-label="Main navigation">
+                <a href="dashboard.html" class="is-active" aria-current="page">Dashboard</a>
                 <a href="transaction-records.html">Transaction history</a>
                 <a href="analytics.html">Analytics</a>
                 <a href="settings.html">Settings</a>
-            </div>
-            <div class="user-chip">Demo User</div>
+            </nav>
+            <span class="navbar-user">Demo User</span>
         </div>
-    </nav>
+    </header>
 
     <main class="wrap">
         <header class="page-header">

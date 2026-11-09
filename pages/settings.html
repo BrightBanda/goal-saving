@@ -7,21 +7,23 @@
   <title>Goal Saving | Settings</title>
   <link rel="stylesheet" href="../styles/navbarAndFooterStyle.css">
   <link rel="stylesheet" href="../styles/settings.css">
+  <link rel="stylesheet" href="../utils/navbar.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="nav-container">
-      <a class="brand" href="dashboard.html" aria-label="Goal Saving dashboard">
-        <span class="brand-mark">G</span><span class="brand-name">GOAL SAVING</span>
+  <header class="app-navbar" data-mode="app">
+    <div class="navbar-inner">
+      <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+        <span class="navbar-brand-mark" aria-hidden="true">G</span>
+        <span>GOAL SAVING</span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="dashboard.html">Dashboard</a>
-        <a class="nav-link" href="transaction-records.html">Transaction history</a>
-        <a class="nav-link" href="analytics.html">Analytics</a>
-        <a class="nav-link active" href="settings.html" aria-current="page">Settings</a>
+      <nav class="navbar-nav" aria-label="Main navigation">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="transaction-records.html">Transaction history</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="settings.html" class="is-active" aria-current="page">Settings</a>
       </nav>
-      <div class="user-pill">Demo User</div>
+      <span class="navbar-user">Demo User</span>
     </div>
   </header>
 

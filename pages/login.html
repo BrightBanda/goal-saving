@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Saving - Login</title>
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../utils/navbar.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">G</span>
-            <span>GOAL SAVING</span>
+    <header class="app-navbar" data-mode="public">
+        <div class="navbar-inner">
+            <a class="navbar-brand" href="index.html" aria-label="Goal Saving home">
+                <span class="navbar-brand-mark" aria-hidden="true">G</span>
+                <span>GOAL SAVING</span>
+            </a>
+            <nav class="navbar-nav" aria-label="Account navigation">
+                <a href="login.html" class="is-active" aria-current="page">Log in</a>
+                <a href="signup.html">Sign up</a>
+            </nav>
         </div>
-
-        <nav>
-            <a href="login.html" class="nav-login">Log in</a>
-            <a href="signup.html">Sign up</a>
-        </nav>
     </header>
 
     <!-- Main Login Section -->

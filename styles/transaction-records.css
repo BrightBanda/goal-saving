@@ -10,16 +10,6 @@ body {
   color: #333;
 }
 
-/* Header */
-header {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 30px;
-  border-bottom: 1px solid #eee;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -33,24 +23,6 @@ header {
   color: #fff;
   padding: 4px 7px;
   border-radius: 4px;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  font-size: 13px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #555;
-  padding: 6px 10px;
-  border-radius: 20px;
-}
-
-nav a.active {
-  background: #16a34a;
-  color: #fff;
 }
 
 .user {
@@ -140,8 +112,6 @@ footer b {
 
 /* Mobile - make table scroll on small phone */
 @media (max-width: 600px) {
-  header { flex-direction: column; gap: 10px; }
-  nav { flex-wrap: wrap; justify-content: center; }
   .card { overflow-x: auto; }
   table { min-width: 550px; }
 }
