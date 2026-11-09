@@ -20,3 +20,11 @@ A web-based savings commitment platform for people who want to build disciplined
 
 - `pages/` - HTML pages
 - `styles/` - CSS stylesheets
+
+## Group Members
+
+1. Collins CJ Chirwa, CEN 01/03/24
+2. Luckson Lwinga CEN 01/06/24
+3. Pynas Loveness Manda ICT 01/06/24
+4. Clement Mbewe ICT 01/59/24
+5. Bright Banda CEN 01/59/24
